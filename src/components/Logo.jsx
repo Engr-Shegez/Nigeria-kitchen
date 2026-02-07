@@ -1,18 +1,20 @@
 import React from "react";
 import { Link } from "react-router";
 import logo from "../assets/logo.png";
+// import logo2 from "../assets/logo2.png";
+// import logo3 from "../assets/logo3.jpg";
 
 const Logo = ({ onNavigate }) => {
   return (
     <Link
       to="/"
-      className="flex items-center gap-1 sm:gap-2 group pl-4 sm:pl-8"
+      className="flex items-center gap-1 pl-4 lg:pl-50 sm:gap-2 group sm:pl-8"
       onClick={onNavigate}
     >
       <img
         src={logo}
         alt="Savage Kitchen Logo"
-        className="h-8 sm:h-15 w-auto transition-transform duration-300 group-hover:scale-105"
+        className="w-auto h-12 transition-transform duration-300 sm:h-20.5 group-hover:scale-105"
       />
     </Link>
   );
