@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import moimoi from "../assets/moimoi.jpg";
+import seafood from "../assets/seafood.jpg";
 
 const Home = () => {
   const featuredDishes = [
@@ -118,28 +119,25 @@ const Home = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
             {featuredDishes.map((dish) => (
               <div
                 key={dish.id}
-                className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-stone-100"
+                className="group bg-white rounded-full overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-stone-100"
               >
-                <div
-                  className="h-40 sm:h-48 bg-linear
-                -to-br from-stone-200 to-stone-300 flex items-center justify-center text-5xl sm:text-7xl overflow-hidden relative"
-                >
+                <div className="h-56 sm:h-64 md:h-72 bg-linear-to-br from-stone-200 to-stone-300 flex items-center justify-center text-7xl sm:text-8xl md:text-9xl overflow-hidden relative">
                   <div className="group-hover:scale-110 transition-transform duration-500">
                     {dish.image}
                   </div>
                 </div>
-                <div className="p-6 sm:p-8">
-                  <h3 className="text-xl sm:text-2xl font-light text-stone-900 mb-2">
+                <div className="p-8 sm:p-10 md:p-12">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-light text-stone-900 mb-3 md:mb-4">
                     {dish.name}
                   </h3>
-                  <p className="text-stone-600 font-light text-sm sm:text-base leading-relaxed">
+                  <p className="text-stone-600 font-light text-base sm:text-lg md:text-lg leading-relaxed mb-4">
                     {dish.description}
                   </p>
-                  <button className="mt-4 sm:mt-6 text-sage-600 hover:text-sage-700 font-medium text-sm sm:text-base transition-colors duration-300 flex items-center gap-2 group/btn">
+                  <button className="mt-6 sm:mt-8 md:mt-10 text-sage-600 hover:text-sage-700 font-medium text-base sm:text-lg transition-colors duration-300 flex items-center gap-2 group/btn">
                     Learn More
                     <span className="group-hover/btn:translate-x-1 transition-transform">
                       →
@@ -203,39 +201,46 @@ const Home = () => {
             </div>
 
             <div className="relative mt-8 md:mt-0">
-              <div className="aspect-square bg-linear-to-br from-stone-200 to-stone-300 rounded-lg flex items-center justify-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl shadow-xl">
-                👨‍🍳
+              <div className="aspect-square bg-linear-to-br from-stone-200 to-stone-300 rounded-lg flex items-center overflow-hidden justify-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl shadow-xl">
+                <img
+                  src={seafood}
+                  alt="Our Philosophy"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
-              <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-32 sm:w-48 h-32 sm:h-48 bg-sage-100 rounded-lg opacity-50"></div>
+              <div className="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-32 sm:w-48 h-32 sm:h-48 bg-sage-100 rounded-lg opacity-75"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-linear-to-r from-sage-700 to-sage-600 relative overflow-hidden flex justify-center">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-linear-to-r from-sage-700 to-sage-600 relative overflow-hidden flex justify-center ">
+        <div className="absolute inset-0 opacity-10 ">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full filter blur-3xl "></div>
           <div className="absolute bottom-0 right-20 w-96 h-96 bg-stone-800 rounded-full filter blur-3xl"></div>
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10 w-full">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-4 sm:mb-6">
+          <h2
+            className="text-3xl sm:text-4xl md:text-5xl font-light text-stone-800
+           mb-4 pb-5 sm:mb-6"
+          >
             Experience Excellence
           </h2>
-          <p className="text-base sm:text-lg text-sage-50 mb-8 sm:mb-12 font-light max-w-2xl mx-auto">
+          <span className="text-base sm:text-lg text-sage-800 mb-8 sm:mb-12 font-medium max-w-2xl mx-auto pt-15">
             Join us for an unforgettable culinary journey. Reserve your table
             today and discover why we're the destination for authentic Nigerian
             cuisine.
-          </p>
+          </span>
 
-          <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center">
+          <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-5 justify-center">
             <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-sage-700 hover:bg-stone-50 font-medium text-sm sm:text-base transition-all duration-300 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-1">
               Book Now
             </button>
             <Link
               to="/menu"
-              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-sage-700 font-medium text-sm sm:text-base transition-all duration-300 rounded-md hover:shadow-xl hover:-translate-y-1"
+              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-black bg-green-800 hover:bg-white hover:text-sage-700 font-medium text-sm sm:text-base transition-all duration-300 rounded-md hover:shadow-xl hover:-translate-y-1"
             >
               Browse Menu
             </Link>
