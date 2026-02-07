@@ -28,6 +28,13 @@ const MobileNav = ({ isOpen, onClose }) => {
         About
       </Link>
       <Link
+        to="/contact"
+        className="block px-4 py-3 text-stone-300 hover:bg-stone-800/50 hover:text-sage-400 rounded-md transition-colors duration-300 font-light text-sm"
+        onClick={onClose}
+      >
+        Contact
+      </Link>
+      <Link
         to="/order"
         className="block px-4 py-3 text-stone-300 hover:bg-stone-800/50 hover:text-sage-400 rounded-md transition-colors duration-300 font-light text-sm"
         onClick={onClose}

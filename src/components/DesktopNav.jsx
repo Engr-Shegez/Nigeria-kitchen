@@ -7,6 +7,7 @@ const DesktopNav = () => {
       <NavLink to="/">Home</NavLink>
       <NavLink to="/menu">Menu</NavLink>
       <NavLink to="/about">About</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
       <NavLink to="/order">Order</NavLink>
       <button className="px-4 sm:px-6 py-2 bg-sage-600 hover:bg-sage-700 text-white font-light  rounded-md transition-all duration-300 shadow-lg hover:shadow-xl">
         Reserve

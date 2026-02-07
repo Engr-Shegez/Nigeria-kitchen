@@ -31,7 +31,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-stone-200">
       {/* Hero Section */}
       <section className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden sm:h-screen pt-14 sm:pt-16 md:pt-20 sm:px-0">
         {/* Background with overlay */}
@@ -146,7 +146,7 @@ const Home = () => {
       </section>
 
       {/* Menu Highlights Section */}
-      <section className="flex justify-center w-full bg-linear-to-b from-stone-50 to-white">
+      <section className="flex justify-center w-full bg-linear-to-b from-stone-200 to-white">
         <div className="w-full max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
           <div className="py-10 mb-12 text-center sm:mb-16">
             <span className="text-xl font-medium tracking-widest uppercase text-sage-600 sm:text-xl ">
@@ -275,7 +275,7 @@ const Home = () => {
           <h2 className="pb-5 mb-4 text-3xl font-light sm:text-4xl md:text-5xl text-stone-800 sm:mb-6">
             Experience Excellence
           </h2>
-          <span className="max-w-2xl mx-auto mb-8 text-base font-medium sm:text-lg text-sage-800 sm:mb-12 pt-15">
+          <span className="max-w-2xl mx-auto mb-8 text-base font-medium sm:text-lg text-sage-700 sm:mb-12 pt-15">
             Join us for an unforgettable culinary journey. Reserve your table
             today and discover why we're the destination for authentic Nigerian
             cuisine.
