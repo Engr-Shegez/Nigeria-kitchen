@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --color-sage-50: #f8faf7;
+    --color-sage-100: #f1f5f0;
+    --color-sage-200: #e5efe7;
+    --color-sage-300: #d3e4d5;
+    --color-sage-400: #b3d4ba;
+    --color-sage-500: #90bfa0;
+    --color-sage-600: #6fa68d;
+    --color-sage-700: #5a926d;
+    --color-sage-800: #4a7956;
+    --color-sage-900: #3d6548;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f1ed;
+  color: #2d2d2d;
+}
+
+/* Custom color utilities */
+.bg-sage-50 {
+  background-color: #f8faf7;
+}
+.bg-sage-100 {
+  background-color: #f1f5f0;
+}
+.bg-sage-200 {
+  background-color: #e5efe7;
+}
+.bg-sage-300 {
+  background-color: #d3e4d5;
+}
+.bg-sage-400 {
+  background-color: #b3d4ba;
+}
+.bg-sage-500 {
+  background-color: #90bfa0;
+}
+.bg-sage-600 {
+  background-color: #164c34;
+}
+.bg-sage-700 {
+  background-color: #08d14b;
+}
+.bg-sage-800 {
+  background-color: #4a7956;
+}
+.bg-sage-900 {
+  background-color: #3d6548;
+}
+
+.text-sage-50 {
+  color: #f8faf7;
+}
+.text-sage-100 {
+  color: #f1f5f0;
+}
+.text-sage-200 {
+  color: #e5efe7;
+}
+.text-sage-300 {
+  color: #d3e4d5;
+}
+.text-sage-400 {
+  color: #b3d4ba;
+}
+.text-sage-500 {
+  color: #90bfa0;
+}
+.text-sage-600 {
+  color: #6fa68d;
+}
+.text-sage-700 {
+  color: #1a3824;
+}
+.text-sage-800 {
+  color: #4a7956;
+}
+.text-sage-900 {
+  color: #3d6548;
+}
+
+.border-sage-50 {
+  border-color: #f8faf7;
+}
+.border-sage-100 {
+  border-color: #f1f5f0;
+}
+.border-sage-200 {
+  border-color: #e5efe7;
+}
+.border-sage-300 {
+  border-color: #d3e4d5;
+}
+.border-sage-400 {
+  border-color: #b3d4ba;
+}
+.border-sage-500 {
+  border-color: #90bfa0;
+}
+.border-sage-600 {
+  border-color: #6fa68d;
+}
+.border-sage-700 {
+  border-color: #5a926d;
+}
+.border-sage-800 {
+  border-color: #4a7956;
+}
+.border-sage-900 {
+  border-color: #3d6548;
+}
+
+/* Smooth transitions */
+button,
+a,
+.transition-all {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover states */
+a:hover {
+  text-decoration: none;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile-first padding and spacing */
+@media (max-width: 768px) {
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Touch-friendly button sizes */
+@media (max-width: 640px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  a[class*="px-"] {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+/* Custom animations */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
