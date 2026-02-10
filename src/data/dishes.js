@@ -13,7 +13,7 @@ import okroo from "../assets/okroo.jpg";
 import palmwine from "../assets/palmwine.png";
 import zobo from "../assets/zobo.png";
 import freshjuice from "../assets/freshjuice.png";
-import vegetable from "../assets/Vegetable.jpg";
+import vegetable from "../assets/vegetable.jpg";
 import friedrice from "../assets/friedrice.png";
 import pundedyam from "../assets/pundedyam.png";
 import egusi from "../assets/egusi.png";
