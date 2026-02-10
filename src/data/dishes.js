@@ -61,6 +61,15 @@ export const allDishes = [
   },
   {
     id: 5,
+    name: "Eba",
+    category: "Swallow",
+    description:
+      "Smooth and creamy mashed plantain and cassava, traditionally served with soup.",
+    price: 1500,
+    image: eba,
+  },
+  {
+    id: 6,
     name: "Amala",
     category: "Swallow",
     description:
@@ -69,7 +78,7 @@ export const allDishes = [
     image: Amala,
   },
   {
-    id: 6,
+    id: 7,
     name: "Pounded Yam",
     category: "Swallow",
     description:
@@ -80,7 +89,7 @@ export const allDishes = [
 
   // Soups
   {
-    id: 7,
+    id: 8,
     name: "Ogbono Soup",
     category: "Soups",
     description:
@@ -89,7 +98,7 @@ export const allDishes = [
     image: okroo,
   },
   {
-    id: 8,
+    id: 9,
     name: "Egusi Soup",
     category: "Soups",
     description:
@@ -98,7 +107,7 @@ export const allDishes = [
     image: egusi,
   },
   {
-    id: 9,
+    id: 10,
     name: "Grilled Fish",
     category: "Soups",
     description:
@@ -107,7 +116,7 @@ export const allDishes = [
     image: seafood,
   },
   {
-    id: 10,
+    id: 11,
     name: "Vegetable Soup",
     category: "Soups",
     description:
@@ -118,7 +127,7 @@ export const allDishes = [
 
   // Proteins
   {
-    id: 11,
+    id: 12,
     name: "Grilled Chicken",
     category: "Proteins",
     description:
@@ -127,7 +136,7 @@ export const allDishes = [
     image: chicken,
   },
   {
-    id: 12,
+    id: 13,
     name: "Suya",
     category: "Proteins",
     description:
@@ -136,7 +145,7 @@ export const allDishes = [
     image: beef,
   },
   {
-    id: 13,
+    id: 14,
     name: "Fish Fillet",
     category: "Proteins",
     description:
@@ -145,7 +154,7 @@ export const allDishes = [
     image: fishfillet,
   },
   {
-    id: 14,
+    id: 15,
     name: "Braised Beef",
     category: "Proteins",
     description:
@@ -156,7 +165,7 @@ export const allDishes = [
 
   // Drinks
   {
-    id: 15,
+    id: 16,
     name: "Fresh Zobo",
     category: "Drinks",
     description:
@@ -165,7 +174,7 @@ export const allDishes = [
     image: zobo,
   },
   {
-    id: 16,
+    id: 17,
     name: "Palm Wine",
     category: "Drinks",
     description:
@@ -174,7 +183,7 @@ export const allDishes = [
     image: palmwine,
   },
   {
-    id: 17,
+    id: 18,
     name: "Fresh Juice",
     category: "Drinks",
     description:
@@ -183,7 +192,7 @@ export const allDishes = [
     image: freshjuice,
   },
   {
-    id: 18,
+    id: 19,
     name: "Ginger Drink",
     category: "Drinks",
     description: "Spicy and warming ginger infusion with honey and lemon.",
