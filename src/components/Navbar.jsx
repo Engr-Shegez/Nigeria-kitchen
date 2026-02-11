@@ -11,9 +11,9 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-stone-900/80 backdrop-blur-md border-b border-stone-800/50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
+    <nav className="fixed top-0 z-50 w-full border-b shadow-lg lg:h-25 bg-stone-900/80 backdrop-blur-md border-stone-800/50 ">
+      <div className="px-4 mx-auto max-w-7xl md:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           <Logo onNavigate={closeMenu} />
           <DesktopNav />
           <MobileMenuButton isOpen={isOpen} onClick={toggleMenu} />

@@ -36,21 +36,21 @@ const Menu = () => {
       {/* Page Header */}
       <section className="flex justify-center w-full px-10 pb-12 pt-28 sm:pt-32 sm:pb-16 md:pt-36 md:pb-20 sm:px-6 lg:px-8">
         <div className="w-full max-w-6xl text-center">
-          <span className="text-sm font-semibold tracking-widest uppercase text-sage-600 sm:text-base md:text-lg">
+          <p className="text-sm font-semibold tracking-widest uppercase pt-14 text-sage-600 sm:text-base md:text-lg">
             Discover
-          </span>
+          </p>
           <h1 className="mt-4 text-4xl font-bold sm:text-5xl md:text-6xl text-stone-900 sm:mt-6">
             Our Menu
           </h1>
-          <span className="max-w-2xl mx-auto mt-4 text-base font-light leading-relaxed text-stone-900 sm:text-lg md:text-2xl sm:mt-6">
+          <p className="max-w-2xl mx-auto mt-3 text-base font-light leading-relaxed text-stone-900 sm:text-lg md:text-2xl sm:mt-6">
             Explore our carefully curated selection of authentic Nigerian
             dishes, each prepared with passion and the finest ingredients.
-          </span>
+          </p>
         </div>
       </section>
 
       {/* Search Bar */}
-      <section className="flex justify-center w-full px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="flex justify-center w-full px-4 pb-6 sm:px-6 lg:px-2">
         <div className="w-full max-w-6xl">
           <div className="relative">
             <input
@@ -58,7 +58,7 @@ const Menu = () => {
               placeholder="Search for your favorite dish..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-6 py-4 pl-12 text-base transition-all duration-300 bg-white border-2 rounded-2xl text-stone-900 placeholder-stone-400 border-stone-200 focus:outline-none focus:border-sage-600 focus:ring-2 focus:ring-sage-100 sm:py-5 sm:text-lg"
+              className="w-full px-6 py-4 pl-12 m-0 text-base transition-all duration-300 bg-white border-2 rounded-2xl text-stone-900 placeholder-stone-400 border-stone-200 focus:outline-none focus:border-sage-600 focus:ring-2 focus:ring-sage-100 sm:py-5 sm:text-lg"
             />
             <svg
               className="absolute w-5 h-5 transform -translate-y-1/2 left-4 top-1/2 text-stone-400"
@@ -80,12 +80,12 @@ const Menu = () => {
       {/* Category Filter */}
       <section className="flex justify-center w-full px-4 pb-12 sm:px-6 lg:px-8">
         <div className="w-full max-w-6xl">
-          <div className="flex gap-2 pb-2 overflow-x-auto sm:gap-3 sm:flex-wrap sm:justify-center">
+          <div className="flex gap-2 pb-0 overflow-x-auto sm:gap-3 sm:flex-wrap sm:justify-center">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-5 py-3 font-medium text-sm whitespace-nowrap transition-all duration-300 rounded-full sm:px-7 sm:py-3 sm:text-base ${
+                className={`px-2 py-2 font-medium text-xs whitespace-nowrap transition-all duration-300 rounded-full sm:px-5 sm:py-3 sm:text-sm lg:px-7 lg:py-3 lg:text-base ${
                   activeCategory === category
                     ? "bg-sage-600 text-white shadow-lg hover:shadow-xl hover:bg-sage-700"
                     : "bg-white text-stone-700 border-2 border-stone-200 hover:border-sage-300 hover:bg-stone-50"

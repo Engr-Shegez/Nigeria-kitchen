@@ -109,9 +109,9 @@ const Contact = () => {
         <div className="w-full max-w-6xl">
           <div className="space-y-6 text-center md:space-y-8">
             <div>
-              <span className="text-sm font-semibold tracking-widest uppercase text-sage-600 sm:text-base md:text-lg">
+              <p className="text-sm font-semibold tracking-widest uppercase pt-14 text-sage-600 sm:text-base md:text-lg">
                 Get in Touch
-              </span>
+              </p>
               <h1 className="mt-4 text-4xl font-bold sm:text-5xl md:text-6xl text-stone-900 sm:mt-6">
                 Contact Us
               </h1>

@@ -93,34 +93,34 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <p className="pt-3 font-mono text-base leading-relaxed text-stone-600 sm:text-lg">
+                <p className="mb-0 font-mono text-base leading-relaxed text-stone-600 sm:text-lg">
                   Authentic Nigeria cuisine crafted with passion, tradition, and
                   contemporary finesse
                 </p>
 
                 <Link
                   to="/about"
-                  className="flex items-center gap-2 pt-3 text-sm font-medium transition-colors duration-300 sm:mt-4 text-sage-600 hover:text-sage-700 sm:text-base group/btn"
+                  className="flex items-center gap-2 text-sm font-medium transition-colors duration-300 sm:mt-1 text-sage-600 hover:text-sage-700 sm:text-base group/btn"
                 >
                   Read Our Full Story
                   <span className="transition-transform group-hover/btn:translate-x-1">
                     →
                   </span>
                 </Link>
-                <div className="flex justify-center gap-3 flex-roll xs:flex-row sm:gap-4 pt-7">
+                <div className="flex justify-center gap-3 pt-2 flex-roll xs:flex-row sm:gap-4">
                   <Link
                     to="/menu"
-                    className="px-6 py-3 text-sm font-medium text-center text-white transition-all duration-300 shadow-lg sm:px-15 sm:py-4 bg-sage-600 hover:bg-sage-700 sm:text-base rounded-xl hover:shadow-xl hover:-translate-y-1"
+                    className="py-4 text-sm font-medium text-center text-white transition-all duration-300 shadow-lg px-7 sm:px-4 sm:py-4 sm:text-base bg-sage-600 hover:bg-sage-700 rounded-2xl hover:shadow-xl hover:-translate-y-1 ring-1 ring-white/20 "
                   >
                     View Menu
                   </Link>
-                  <button className="px-6 py-3 text-sm font-medium transition-all duration-300 border-2 sm:px-15 sm:py-4 border-stone-200 text-stone-700 hover:bg-white hover:text-stone-700 sm:text-base rounded-xl backdrop-blur-sm hover:shadow-xl hover:-translate-y-1">
+                  <button className="px-6 py-3 text-sm font-medium transition-all duration-300 border-2 sm:px-4 sm:py-4 border-stone-200 text-stone-700 hover:bg-white hover:text-stone-700 sm:text-base rounded-xl backdrop-blur-sm hover:shadow-xl hover:-translate-y-1">
                     Book a Table
                   </button>
                 </div>
               </div>
               <div className="absolute w-32 h-32 rounded-lg -bottom-4 sm:-top-5 lg:left-104 md:left-87 sm:right-6 sm:w-48 sm:h-48 bg-sage-400 opacity-95"></div>
-              <div className="relative mt-8 md:mt-0">
+              <div className="relative mt-5 md:mt-0">
                 <div className="flex items-center justify-center overflow-hidden text-6xl shadow-xl aspect-square bg-linear-to-br from-stone-200 to-stone-300 rounded-xl sm:text-7xl md:text-8xl lg:text-9xl w-80 sm:w-96 md:w-md lg:w-xl">
                   <img
                     src={seafood}

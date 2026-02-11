@@ -60,13 +60,13 @@ const About = () => {
   return (
     <div className="min-h-screen bg-stone-200">
       {/* Hero Section */}
-      <section className="flex justify-center w-full px-4 pb-16 pt-28 sm:pt-32 sm:pb-20 md:pt-40 md:pb-24 sm:px-6 lg:px-8">
+      <section className="flex justify-center w-full px-4 pt-32 pb-16 sm:pt-36 sm:pb-20 md:pt-45 md:pb-24 sm:px-6 lg:px-8">
         <div className="w-full max-w-6xl">
           <div className="space-y-6 text-center md:space-y-8">
             <div>
-              <span className="text-sm font-semibold tracking-widest uppercase text-sage-600 sm:text-base md:text-lg">
+              <p className="text-sm font-semibold tracking-widest uppercase pt-14 text-sage-600 sm:text-base md:text-lg">
                 Our Story
-              </span>
+              </p>
               <h1 className="mt-4 text-4xl font-bold sm:text-5xl md:text-6xl text-stone-900 sm:mt-6">
                 About Us
               </h1>

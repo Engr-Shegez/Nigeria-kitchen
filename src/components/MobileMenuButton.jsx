@@ -4,7 +4,7 @@ const MobileMenuButton = ({ isOpen, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className="md:hidden flex flex-col gap-1.5 w-6 h-6 relative pr-4 sm:pr-8"
+      className="md:hidden flex flex-col gap-1.5 w-6 h-6 relative pr-5 sm:pr-8 pt-6"
     >
       <span
         className={`w-full h-0.5 bg-stone-300 transition-all duration-300 ${
