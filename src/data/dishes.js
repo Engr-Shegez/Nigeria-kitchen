@@ -1,211 +1,207 @@
-// Sample dish data for the Menu
-import moimoi from "../assets/moimoi.jpg";
-import seafood from "../assets/seafood.jpg";
-import rice from "../assets/rice.jpg";
-import chicken from "../assets/chicken.jpg";
 import Amala from "../assets/Amala.jpg";
 import beans from "../assets/beans.jpg";
 import beef from "../assets/beef.png";
+import chicken from "../assets/chicken.jpg";
 import eba from "../assets/eba.jpg";
-import raps from "../assets/raps.jpg";
+import egusi from "../assets/egusi.png";
 import fishfillet from "../assets/fishfillet.png";
+import freshjuice from "../assets/freshjuice.png";
+import friedrice from "../assets/friedrice.png";
+import ginger from "../assets/ginger.png";
+import moimoi from "../assets/moimoi.jpg";
 import okroo from "../assets/okroo.jpg";
 import palmwine from "../assets/palmwine.png";
-import zobo from "../assets/zobo.png";
-import freshjuice from "../assets/freshjuice.png";
-import vegetable from "../assets/vegetable.jpg";
-import friedrice from "../assets/friedrice.png";
 import pundedyam from "../assets/pundedyam.png";
-import egusi from "../assets/egusi.png";
-import ginger from "../assets/ginger.png";
-
-export const allDishes = [
-  // Rice Dishes
-  {
-    id: 1,
-    name: "Jollof Rice",
-    category: "Rice",
-    description:
-      "Perfectly seasoned jollof rice slow-cooked in rich tomato sauce with a smoky finish.",
-    price: 2500,
-    image: rice,
-  },
-  {
-    id: 2,
-    name: "Fried Rice",
-    category: "Rice",
-    description:
-      "Fluffy rice stir-fried with vegetables, protein, and aromatic spices for a complete meal.",
-    price: 2800,
-    image: friedrice,
-  },
-  {
-    id: 3,
-    name: "White Rice & Stew",
-    category: "Beans",
-    description:
-      "Perfectly cooked white rice served with rich tomato-based stew and tender meat.",
-    price: 2200,
-    image: beans,
-  },
-
-  // Swallow
-  {
-    id: 4,
-    name: "Fufu",
-    category: "Swallow",
-    description:
-      "Smooth and creamy mashed plantain and cassava, traditionally served with soup.",
-    price: 1500,
-    image: moimoi,
-  },
-  {
-    id: 5,
-    name: "Eba",
-    category: "Swallow",
-    description:
-      "Smooth and creamy mashed plantain and cassava, traditionally served with soup.",
-    price: 1500,
-    image: eba,
-  },
-  {
-    id: 6,
-    name: "Amala",
-    category: "Swallow",
-    description:
-      "Silky yam flour swallow, perfectly paired with rich Nigerian soups.",
-    price: 1200,
-    image: Amala,
-  },
-  {
-    id: 7,
-    name: "Pounded Yam",
-    category: "Swallow",
-    description:
-      "Fluffy and smooth pounded yam, an authentic Nigerian comfort food staple.",
-    price: 1800,
-    image: pundedyam,
-  },
-
-  // Soups
-  {
-    id: 8,
-    name: "Ogbono Soup",
-    category: "Soups",
-    description:
-      "Rich and smooth soup made with melon seeds, served with tender meat and seafood.",
-    price: 3200,
-    image: okroo,
-  },
-  {
-    id: 9,
-    name: "Egusi Soup",
-    category: "Soups",
-    description:
-      "Creamy pumpkin seed soup with beef, fish, and vibrant vegetables.",
-    price: 3000,
-    image: egusi,
-  },
-  {
-    id: 10,
-    name: "Grilled Fish",
-    category: "Soups",
-    description:
-      "Aromatic spiced broth with tender meat or seafood, perfect as an appetizer.",
-    price: 2800,
-    image: seafood,
-  },
-  {
-    id: 11,
-    name: "Vegetable Soup",
-    category: "Soups",
-    description:
-      "Light and nutritious soup loaded with fresh vegetables and tender proteins.",
-    price: 2400,
-    image: vegetable,
-  },
-
-  // Proteins
-  {
-    id: 12,
-    name: "Grilled Chicken",
-    category: "Proteins",
-    description:
-      "Tender, well-seasoned chicken cooked to juicy perfection with a rich, savory finish.",
-    price: 4500,
-    image: chicken,
-  },
-  {
-    id: 13,
-    name: "Suya",
-    category: "Proteins",
-    description:
-      "Spiced grilled meat skewers with groundnut coating, served with onions and lime.",
-    price: 3500,
-    image: beef,
-  },
-  {
-    id: 14,
-    name: "Fish Fillet",
-    category: "Proteins",
-    description:
-      "Pan-fried white fish fillet with aromatic spices and fresh lemon.",
-    price: 5000,
-    image: fishfillet,
-  },
-  {
-    id: 15,
-    name: "Braised Beef",
-    category: "Proteins",
-    description:
-      "Slow-cooked beef in savory sauce with tender, melt-in-your-mouth texture.",
-    price: 4000,
-    image: beef,
-  },
-
-  // Drinks
-  {
-    id: 16,
-    name: "Fresh Zobo",
-    category: "Drinks",
-    description:
-      "Refreshing hibiscus drink with ginger and spices, served ice-cold.",
-    price: 500,
-    image: zobo,
-  },
-  {
-    id: 17,
-    name: "Palm Wine",
-    category: "Drinks",
-    description:
-      "Traditional fermented drink with smooth, slightly sweet taste.",
-    price: 800,
-    image: palmwine,
-  },
-  {
-    id: 18,
-    name: "Fresh Juice",
-    category: "Drinks",
-    description:
-      "Freshly squeezed tropical fruit juice with natural sweetness and vibrant flavor.",
-    price: 600,
-    image: freshjuice,
-  },
-  {
-    id: 19,
-    name: "Ginger Drink",
-    category: "Drinks",
-    description: "Spicy and warming ginger infusion with honey and lemon.",
-    price: 400,
-    image: ginger,
-  },
-];
+import raps from "../assets/raps.jpg";
+import rice from "../assets/rice.jpg";
+import seafood from "../assets/seafood.jpg";
+import zobo from "../assets/zobo.png";
+import vegetable from "../assets/vegetable.jpg";
 
 export const categories = [
   "All",
-  "Rice",
-  "Swallow",
+  "Swallows",
   "Soups",
+  "Rice Dishes",
   "Proteins",
+  "Street Food",
   "Drinks",
 ];
+
+export const allDishes = [
+  {
+    id: "rice-jollof",
+    name: "Jollof Rice",
+    category: "Rice Dishes",
+    price: 3200,
+    image: rice,
+    description:
+      "Party-style rice simmered in peppered tomato stock with a smoky Lagos finish.",
+  },
+  {
+    id: "rice-fried",
+    name: "Fried Rice",
+    category: "Rice Dishes",
+    price: 3400,
+    image: friedrice,
+    description:
+      "Fragrant rice tossed with vegetables, herbs, liver bits, and a soft pepper kick.",
+  },
+  {
+    id: "rice-ofada",
+    name: "Ofada Rice & Ayamase",
+    category: "Rice Dishes",
+    price: 4200,
+    image: beans,
+    description:
+      "Local rice paired with green pepper sauce, assorted meats, and boiled egg.",
+  },
+  {
+    id: "swallow-eba",
+    name: "Eba",
+    category: "Swallows",
+    price: 1200,
+    image: eba,
+    description:
+      "Golden garri swallow, smooth and firm enough for your favourite soup.",
+  },
+  {
+    id: "swallow-amala",
+    name: "Amala",
+    category: "Swallows",
+    price: 1400,
+    image: Amala,
+    description:
+      "Silky yam flour swallow served warm, especially good with gbegiri and ewedu.",
+  },
+  {
+    id: "swallow-pounded-yam",
+    name: "Pounded Yam",
+    category: "Swallows",
+    price: 1900,
+    image: pundedyam,
+    description:
+      "Soft, stretchy pounded yam with a cloud-like texture and comforting bite.",
+  },
+  {
+    id: "soup-egusi",
+    name: "Egusi Soup",
+    category: "Soups",
+    price: 3600,
+    image: egusi,
+    description:
+      "Melon seed soup with leafy greens, stockfish, beef, and deep pepper flavour.",
+  },
+  {
+    id: "soup-ogbono",
+    name: "Ogbono Soup",
+    category: "Soups",
+    price: 3600,
+    image: okroo,
+    description:
+      "Velvety draw soup cooked with ogbono, dry fish, beef, and native seasoning.",
+  },
+  {
+    id: "soup-afang",
+    name: "Afang Soup",
+    category: "Soups",
+    price: 4400,
+    image: vegetable,
+    description:
+      "Calabar-style leafy soup with waterleaf, afang leaves, smoked fish, and periwinkle.",
+  },
+  {
+    id: "protein-suya",
+    name: "Suya",
+    category: "Proteins",
+    price: 3000,
+    image: beef,
+    description:
+      "Char-grilled beef strips dusted with yaji spice, onions, tomatoes, and lime.",
+  },
+  {
+    id: "protein-chicken",
+    name: "Peppered Chicken",
+    category: "Proteins",
+    price: 3800,
+    image: chicken,
+    description:
+      "Juicy chicken glazed in a rich red pepper sauce with herbs and onions.",
+  },
+  {
+    id: "protein-goat",
+    name: "Goat Meat",
+    category: "Proteins",
+    price: 4200,
+    image: fishfillet,
+    description:
+      "Tender goat meat simmered in spiced stock, finished in pepper sauce.",
+  },
+  {
+    id: "protein-fish",
+    name: "Grilled Croaker",
+    category: "Proteins",
+    price: 5800,
+    image: seafood,
+    description:
+      "Whole fish grilled with pepper rub, plantain, and a bright onion relish.",
+  },
+  {
+    id: "street-puff-puff",
+    name: "Puff Puff",
+    category: "Street Food",
+    price: 900,
+    image: raps,
+    description:
+      "Warm golden dough bites, lightly sweet and fried until pillowy.",
+  },
+  {
+    id: "street-akara",
+    name: "Akara",
+    category: "Street Food",
+    price: 1200,
+    image: moimoi,
+    description:
+      "Crisp bean fritters with soft centres, served with pepper dip.",
+  },
+  {
+    id: "drink-zobo",
+    name: "Zobo",
+    category: "Drinks",
+    price: 900,
+    image: zobo,
+    description:
+      "Chilled hibiscus drink steeped with ginger, cloves, pineapple, and citrus.",
+  },
+  {
+    id: "drink-kunu",
+    name: "Kunu",
+    category: "Drinks",
+    price: 800,
+    image: ginger,
+    description:
+      "Creamy millet drink with ginger and warm spices, served cold.",
+  },
+  {
+    id: "drink-chapman",
+    name: "Chapman",
+    category: "Drinks",
+    price: 1500,
+    image: freshjuice,
+    description:
+      "Nigerian mocktail with citrus, bitters, cucumber, and a lively fizz.",
+  },
+  {
+    id: "drink-palmwine",
+    name: "Palm Wine",
+    category: "Drinks",
+    price: 1300,
+    image: palmwine,
+    description:
+      "Traditional palm wine, lightly sweet, fresh, and served chilled.",
+  },
+];
+
+export const featuredDishes = allDishes.filter((dish) =>
+  ["rice-jollof", "soup-afang", "protein-suya", "drink-chapman"].includes(dish.id),
+);
