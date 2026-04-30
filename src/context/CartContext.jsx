@@ -28,14 +28,21 @@ export const CartProvider = ({ children }) => {
   }, []);
 
   const addToCart = useCallback(
-    (dish) => {
+    (dish, options = {}) => {
+      const selectedAddOns = options.addOns || [];
+      const spice = options.spice || "Regular";
+      const addOnTotal = selectedAddOns.reduce((sum, addOn) => sum + addOn.price, 0);
+      const unitPrice = dish.price + addOnTotal;
+      const optionKey = selectedAddOns.map((addOn) => addOn.id).sort().join("-");
+      const lineId = `${dish.id}__${spice}__${optionKey || "plain"}`;
+
       setCartItems((prevItems) => {
-        const existingItem = prevItems.find((item) => item.id === dish.id);
+        const existingItem = prevItems.find((item) => (item.lineId || item.id) === lineId);
 
         if (existingItem) {
           showToast(`${dish.name} quantity updated`);
           return prevItems.map((item) =>
-            item.id === dish.id
+            (item.lineId || item.id) === lineId
               ? { ...item, quantity: item.quantity + 1 }
               : item,
           );
@@ -46,9 +53,13 @@ export const CartProvider = ({ children }) => {
           ...prevItems,
           {
             id: dish.id,
+            lineId,
             name: dish.name,
             category: dish.category,
-            price: dish.price,
+            basePrice: dish.price,
+            price: unitPrice,
+            addOns: selectedAddOns,
+            spice,
             quantity: 1,
             image: dish.image,
           },
@@ -59,19 +70,21 @@ export const CartProvider = ({ children }) => {
     [showToast],
   );
 
-  const removeFromCart = useCallback((id) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+  const removeFromCart = useCallback((lineId) => {
+    setCartItems((prevItems) =>
+      prevItems.filter((item) => (item.lineId || item.id) !== lineId),
+    );
   }, []);
 
-  const updateQuantity = useCallback((id, quantity) => {
+  const updateQuantity = useCallback((lineId, quantity) => {
     if (quantity <= 0) {
-      removeFromCart(id);
+      removeFromCart(lineId);
       return;
     }
 
     setCartItems((prevItems) =>
       prevItems.map((item) =>
-        item.id === id ? { ...item, quantity } : item,
+        (item.lineId || item.id) === lineId ? { ...item, quantity } : item,
       ),
     );
   }, [removeFromCart]);

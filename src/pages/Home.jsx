@@ -28,11 +28,12 @@ const Home = () => {
       <section className="hero-section">
         <div className="container hero-grid">
           <Reveal className="hero-copy">
-            <p className="eyebrow">Lagos comfort, plated with care</p>
+            <p className="eyebrow">Comfort cuisine, thoughtfully presented</p>
             <h1>Savage Kitchen</h1>
             <p>
-              Premium Nigerian meals for dine-in, pickup, and delivery, built around
-              smoky rice, rich soups, tender proteins, and drinks that taste like home.
+              Premium Nigerian meals for dine-in, pickup, and delivery, built
+              around smoky rice, rich soups, tender proteins, and drinks that
+              taste like home.
             </p>
             <div className="hero-actions">
               <Link className="btn btn-primary" to="/menu">
@@ -45,7 +46,11 @@ const Home = () => {
           </Reveal>
 
           <Reveal className="hero-visual" delay={120}>
-            <img className="hero-main-image" src={rice} alt="A plate of Nigerian jollof rice" />
+            <img
+              className="hero-main-image"
+              src={rice}
+              alt="A plate of Nigerian jollof rice"
+            />
             <div className="hero-floating-card top-card">
               <span>Today</span>
               <strong>Chef's smoky jollof</strong>
@@ -54,7 +59,11 @@ const Home = () => {
               <span>Pickup ready</span>
               <strong>25-35 min</strong>
             </div>
-            <img className="hero-side-image" src={egusi} alt="Egusi soup with assorted protein" />
+            <img
+              className="hero-side-image"
+              src={egusi}
+              alt="Egusi soup with assorted protein"
+            />
           </Reveal>
         </div>
       </section>
@@ -63,10 +72,10 @@ const Home = () => {
         <div className="container section-heading">
           <Reveal>
             <p className="eyebrow">Chef Specials</p>
-            <h2>Made for cravings, not just clicks</h2>
+            <h2>Come hungry, leave happy</h2>
             <p>
-              A short list of guest favourites, balanced for flavour, texture, and a
-              proper Nigerian table.
+              Guest favourites, thoughtfully balanced for flavour, texture, and
+              an authentic Nigerian experience
             </p>
           </Reveal>
         </div>
@@ -82,14 +91,18 @@ const Home = () => {
       <section className="section split-section">
         <div className="container split-grid">
           <Reveal>
-            <img className="story-image" src={seafood} alt="Grilled Nigerian seafood platter" />
+            <img
+              className="story-image"
+              src={seafood}
+              alt="Grilled Nigerian seafood platter"
+            />
           </Reveal>
           <Reveal className="story-copy" delay={100}>
             <p className="eyebrow">The Experience</p>
-            <h2>Warm hospitality, sharper digital flow</h2>
+            <h2>Good food, made easy</h2>
             <p>
-              Browse by category, search quickly, build your order without losing
-              your place, or reserve a table in under a minute.
+              Find your favourites, place your order without stress, or reserve
+              a table in just a few taps.
             </p>
             <div className="feature-list">
               <span>Fresh batches daily</span>
@@ -125,7 +138,11 @@ const Home = () => {
         </div>
         <div className="container testimonial-grid">
           {testimonials.map((testimonial, index) => (
-            <Reveal className="testimonial-card" key={testimonial.name} delay={index * 90}>
+            <Reveal
+              className="testimonial-card"
+              key={testimonial.name}
+              delay={index * 90}
+            >
               <p>“{testimonial.text}”</p>
               <strong>{testimonial.name}</strong>
             </Reveal>
@@ -138,7 +155,10 @@ const Home = () => {
           <Reveal>
             <p className="eyebrow">Location</p>
             <h2>Lekki Phase 1, Lagos</h2>
-            <p>18 Admiralty Way. Delivery covers Lekki, VI, Ikoyi, Oniru, and nearby areas.</p>
+            <p>
+              18 Admiralty Way. Delivery covers Lekki, VI, Ikoyi, Oniru, and
+              nearby areas.
+            </p>
           </Reveal>
           <Reveal className="hours-card" delay={100}>
             <h3>Opening Hours</h3>

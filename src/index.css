@@ -469,6 +469,18 @@ img {
   font-weight: 900;
 }
 
+.dish-badge {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #2a1b12;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
 .menu-card-body {
   min-height: 236px;
   display: flex;
@@ -486,6 +498,60 @@ img {
 .menu-card-body p {
   color: var(--muted);
   line-height: 1.65;
+}
+
+.dish-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.dish-meta span {
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface-strong);
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.menu-customizer {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--bg-soft), transparent 32%);
+}
+
+.menu-customizer select {
+  padding-block: 10px;
+}
+
+.add-on-list {
+  display: grid;
+  gap: 8px;
+}
+
+.add-on-option {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  color: var(--text);
+}
+
+.add-on-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.add-on-option strong {
+  color: var(--accent);
+  font-size: 0.86rem;
 }
 
 .menu-card-footer,
@@ -829,10 +895,46 @@ textarea:focus {
   gap: 18px;
 }
 
+.delivery-zone-note {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--gold), transparent 84%);
+}
+
+.delivery-zone-note span,
+.cart-options {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
 .summary-line.total {
   padding-top: 16px;
   border-top: 1px solid var(--line);
   font-size: 1.15rem;
+}
+
+.success-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  align-items: center;
+  gap: 36px;
+}
+
+.success-panel h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+}
+
+.success-panel p:not(.eyebrow) {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 16px;
 }
 
 .cart-scrim {
@@ -1044,6 +1146,10 @@ textarea:focus {
 
   .checkout-summary {
     position: static;
+  }
+
+  .success-panel {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,8 +1,6 @@
 import { Link } from "react-router";
 import { useCart } from "../hooks/useCart";
 
-const DELIVERY_FEE = 900;
-
 const CartDrawer = () => {
   const {
     cartItems,
@@ -13,7 +11,6 @@ const CartDrawer = () => {
     subtotal,
     updateQuantity,
   } = useCart();
-  const total = cartItems.length ? subtotal + DELIVERY_FEE : 0;
 
   return (
     <>
@@ -53,21 +50,27 @@ const CartDrawer = () => {
             </div>
           ) : (
             cartItems.map((item) => (
-              <div className="cart-item" key={item.id}>
+              <div className="cart-item" key={item.lineId || item.id}>
                 <img src={item.image} alt={item.name} />
                 <div>
                   <h3>{item.name}</h3>
-                  <p>₦{item.price.toLocaleString()}</p>
-                  <button type="button" onClick={() => removeFromCart(item.id)}>
+                  <p>₦{item.price.toLocaleString()} each</p>
+                  <p className="cart-options">
+                    {item.spice || "Regular"}
+                    {item.addOns?.length
+                      ? ` · ${item.addOns.map((addOn) => addOn.name).join(", ")}`
+                      : ""}
+                  </p>
+                  <button type="button" onClick={() => removeFromCart(item.lineId || item.id)}>
                     Remove
                   </button>
                 </div>
                 <div className="quantity-control" aria-label={`Quantity for ${item.name}`}>
-                  <button type="button" onClick={() => updateQuantity(item.id, item.quantity - 1)}>
+                  <button type="button" onClick={() => updateQuantity(item.lineId || item.id, item.quantity - 1)}>
                     −
                   </button>
                   <span>{item.quantity}</span>
-                  <button type="button" onClick={() => updateQuantity(item.id, item.quantity + 1)}>
+                  <button type="button" onClick={() => updateQuantity(item.lineId || item.id, item.quantity + 1)}>
                     +
                   </button>
                 </div>
@@ -82,13 +85,9 @@ const CartDrawer = () => {
               <span>Subtotal</span>
               <strong>₦{subtotal.toLocaleString()}</strong>
             </div>
-            <div className="summary-line">
-              <span>Delivery</span>
-              <strong>₦{DELIVERY_FEE.toLocaleString()}</strong>
-            </div>
             <div className="summary-line total">
-              <span>Total</span>
-              <strong>₦{total.toLocaleString()}</strong>
+              <span>Delivery</span>
+              <strong>Calculated at checkout</strong>
             </div>
             <Link className="btn btn-primary" to="/order" onClick={() => setIsCartOpen(false)}>
               Checkout
